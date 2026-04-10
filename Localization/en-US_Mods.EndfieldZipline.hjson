@@ -1,0 +1,132 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	LongDistanceZipline: {
+		Tooltip: ""
+		DisplayName: Long Distance Zipline
+	}
+
+	AdamantiteZiplineFrame: {
+		DisplayName: Adamantite Zipline Frame
+		Tooltip: ""
+	}
+
+	CommonZiplineFrame: {
+		DisplayName: Common Zipline Frame
+		Tooltip: ""
+	}
+
+	TitaniumZiplineFrame: {
+		DisplayName: Titanium Zipline Frame
+		Tooltip: ""
+	}
+
+	MechanicalZiplineFrame: {
+		DisplayName: Mechanical Zipline Frame
+		Tooltip: ""
+	}
+
+	NormalZiplineFrame: {
+		DisplayName: Normal Zipline Frame
+		Tooltip: ""
+	}
+
+	BoulderZiplineFrame: {
+		DisplayName: Boulder Zipline Frame
+		Tooltip: ""
+	}
+
+	NightglowZiplineFrame: {
+		DisplayName: Nightglow Zipline Frame
+		Tooltip: ""
+	}
+}
+
+Tiles.LongDistanceZiplineTile.MapEntry: Long Distance Zipline Tile
+
+UI: {
+	ZiplineConfigButton: Zipline Config
+	DyeSlot: Dye Slot
+	ZiplineFrameSlot: Zipline Frame
+	MapZiplineHoverText: Long Distance Zipline
+	ZiplineObstructed: There are blocks between the ziplines!
+	BoulderDeathReason: "{0} was crushed by a boulder"
+}
+
+Configs: {
+	EndfieldZiplineConfig: {
+		DisplayName: Endfield Zipline Config
+
+		Headers: {
+			ZiplineSettings: Zipline Settings Header
+			SimpleMode: Simple Mode
+		}
+
+		ZiplineRopeColor: {
+			Label: Zipline Rope Color
+			Tooltip: The color of the zipline rope when riding
+		}
+
+		ZiplineQuickMoveKey: {
+			Label: Zipline Quick Move Key
+			Tooltip: The key to quickly move to the nearest zipline in the direction you're facing (Type a key name, e.g. E, Q, F)
+		}
+
+		ZiplineMoveSpeed: {
+			Label: Zipline Move Speed Preset
+			Tooltip: Controls the travel speed when moving between two ziplines
+			$Default: Default
+			$Fast: Fast
+			$UltraFast: Ultra Fast
+		}
+
+		ResetZiplineRopeColorToDefault: {
+			Label: Reset to Default Color
+			Tooltip: Click to reset the zipline rope color to the default light blue
+		}
+
+		ShowZiplineIconsOnFullscreenMap: {
+			Label: Show Zipline Icons on Fullscreen Map
+			Tooltip: Show placed zipline icons on the fullscreen map
+		}
+
+		ZiplineRopePhysicsEffect: {
+			Label: Rope Physics Effect
+			Tooltip: When enabled, the zipline rope will visually sag near the player while riding
+		}
+
+		DisableZiplineSounds: {
+			Label: Disable Zipline Sounds
+			Tooltip: When enabled, disables zipline-related sounds (select destination, riding, arrival)
+		}
+
+		SimpleModeEnabled: {
+			Label: Enable Simple Mode
+			Tooltip: When enabled, you can use the zipline speed preset but the zipline config button will be hidden. When disabled, the zipline config button is shown but speed is fixed to default.
+		}
+	}
+
+	ZiplineMoveSpeedPreset: {
+		Tooltip: ""
+
+		Default: {
+			Label: Default
+			Tooltip: ""
+		}
+
+		Fast: {
+			Label: Fast
+			Tooltip: ""
+		}
+
+		UltraFast: {
+			Label: Ultra Fast
+			Tooltip: ""
+		}
+
+		Teleport: {
+			Label: On (Teleport)
+			Tooltip: ""
+		}
+	}
+}

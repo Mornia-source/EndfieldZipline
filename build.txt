@@ -1,0 +1,3 @@
+displayName = 终末地长距离滑索
+author = Mornia
+version = 1.3.2

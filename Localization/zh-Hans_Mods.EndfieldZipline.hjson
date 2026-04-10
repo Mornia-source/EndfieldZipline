@@ -1,0 +1,136 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	LongDistanceZipline: {
+		Tooltip:
+			'''
+			放置后可在两个滑索之间快速移动
+			右键点击滑索开始滑行
+			'''
+		DisplayName: 长距离滑索
+	}
+
+	AdamantiteZiplineFrame: {
+		DisplayName: 精金滑索架
+		// Tooltip: ""
+	}
+
+	CommonZiplineFrame: {
+		DisplayName: 金属滑索架
+		// Tooltip: ""
+	}
+
+	TitaniumZiplineFrame: {
+		DisplayName: 钛金滑索架
+		// Tooltip: ""
+	}
+
+	MechanicalZiplineFrame: {
+		DisplayName: 机械滑索架
+		// Tooltip: ""
+	}
+
+	NormalZiplineFrame: {
+		DisplayName: 普通滑索架
+		// Tooltip: ""
+	}
+
+	BoulderZiplineFrame: {
+		DisplayName: 巨石滑索架
+		// Tooltip: ""
+	}
+
+	NightglowZiplineFrame: {
+		DisplayName: 夜明滑索架
+		// Tooltip: ""
+	}
+}
+
+Tiles.LongDistanceZiplineTile.MapEntry: 长距离滑索
+
+UI: {
+	ZiplineConfigButton: 滑索配置
+	DyeSlot: 染料栏
+	ZiplineFrameSlot: 滑索架
+	MapZiplineHoverText: 长距离滑索
+	ZiplineObstructed: 滑索之间有方块阻挡！
+	BoulderDeathReason: "{0}被巨石砸死"
+}
+
+Configs: {
+	EndfieldZiplineConfig: {
+		DisplayName: 模组设置
+
+		Headers: {
+			ZiplineSettings: 滑索设置
+			SimpleMode: 简易模式
+		}
+
+		ZiplineRopeColor: {
+			Label: 滑索绳索颜色
+			Tooltip: 滑行时显示的绳索颜色
+		}
+
+		ZiplineQuickMoveKey: {
+			Label: 快速移动按键
+			Tooltip: 在滑索上按此键可快速移动到面朝向最近的滑索（输入按键名称，如 E、Q、F 等）
+		}
+
+		ZiplineMoveSpeed: {
+			Label: 滑索移动速度预设
+			Tooltip: 控制滑索之间滑行时的移动速度
+			$Default: 默认
+			$Fast: 快速
+			$UltraFast: 超快
+		}
+
+		ResetZiplineRopeColorToDefault: {
+			Label: 恢复默认颜色
+			Tooltip: 点击后将滑索绳索颜色恢复为默认浅蓝色
+		}
+
+		ShowZiplineIconsOnFullscreenMap: {
+			Label: 大地图显示滑索图标
+			Tooltip: 在全屏大地图上显示已放置滑索的图标
+		}
+
+		ZiplineRopePhysicsEffect: {
+			Label: 索道线物理效果
+			Tooltip: 开启后，滑行时索道线会在玩家附近产生局部下坠的动态视觉效果
+		}
+
+		DisableZiplineSounds: {
+			Label: 禁用滑索音效
+			Tooltip: 开启后将禁用滑索相关音效（选择目的地、滑行中、到达目的地）
+		}
+
+		SimpleModeEnabled: {
+			Label: 启用简易模式
+			Tooltip: 开启后：可使用“滑索移动速度预设”，但将隐藏“滑索配置”按钮。关闭后：显示“滑索配置”按钮，但滑索速度将固定为默认速度。
+		}
+	}
+
+	ZiplineMoveSpeedPreset: {
+		// Tooltip: ""
+
+		Default: {
+			Label: 默认
+			// Tooltip: ""
+		}
+
+		Fast: {
+			Label: 快速
+			// Tooltip: ""
+		}
+
+		UltraFast: {
+			Label: 超快
+			// Tooltip: ""
+		}
+
+		Teleport: {
+			Label: 开了（瞬移）
+			// Tooltip: ""
+		}
+	}
+}
